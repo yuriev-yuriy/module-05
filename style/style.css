@@ -1,2 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    /* display: block; */
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+
+.logo a {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #555252;
+
+}
+
+.logo::first-letter {
+    color: #1abc9c;
+    font-weight: 900;
+}
+
+.logo {
+    float: left;
+}
+
+ul.nav-list {
+    display: inline-block;
+    float: right;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.nav-list li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    float: left;
+}
+
+.nav-list li:not(:last-child) {
+    margin-right: 34px;
+}
+
+.nav-list a {
+    color: #0f0101;
+}
+
+.nav-list a:hover {
+    color: #1abc9c;
+}
+
+.overlay {
+    width: 1600px;
+    height: 602px;
+    background-color: rgba(0, 0, 2, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+}
+
+.prev-arrow {
+    background-color: rgba(78, 198, 171, 0.65);
+    background-image: url("../img/prev-arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 104px;
+    height: 104px;
+    border: none;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-arrow {
+    background-color: rgba(78, 198, 171, 0.65);
+    background-image: url("../img/next-arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 104px;
+    height: 104px;
+    border: none;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.overlay {
+    padding-top: 208px;
+
+}
+
+.overlay h2 {
+    font-size: 60px;
+    line-height: 82px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.overlay p {
+    font-size: 24px;
+    line-height: 54px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
 font-family: 'Open Sans',
+sans-serif;
+font-family: 'Roboto',
 sans-serif;
