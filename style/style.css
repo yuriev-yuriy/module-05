@@ -115,6 +115,7 @@ ul.nav-list {
     height: 104px;
     border: none;
     float: left;
+    cursor: pointer;
 }
 
 .next-arrow {
@@ -126,6 +127,7 @@ ul.nav-list {
     height: 104px;
     border: none;
     float: right;
+    cursor: pointer;
 }
 
 .banner-button {
