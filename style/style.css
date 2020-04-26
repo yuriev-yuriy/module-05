@@ -336,6 +336,7 @@ li.collection-list-item:hover .overlay-collection {
 }
 
 footer {
+    width: 1600px;
     background-color: #323232;
     text-align: center;
     padding: 34px 0 30px 0;
