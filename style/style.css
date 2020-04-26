@@ -1,12 +1,12 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto',
-        sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -15,7 +15,6 @@ img {
 
 a {
     text-decoration: none;
-    /* display: block; */
 }
 
 ul,
@@ -35,10 +34,10 @@ ol {
 }
 
 .header {
+    width: 1600px;
     padding-top: 36px;
     padding-bottom: 36px;
 }
-
 
 .logo a {
     text-transform: uppercase;
@@ -49,7 +48,6 @@ ol {
     line-height: 32px;
     letter-spacing: -0.02em;
     color: #555252;
-
 }
 
 .logo::first-letter {
@@ -62,14 +60,13 @@ ol {
 }
 
 ul.nav-list {
-    display: inline-block;
     float: right;
     padding: 0;
     padding-top: 10px;
 }
 
 .nav-list li {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
@@ -89,18 +86,24 @@ ul.nav-list {
     color: #1abc9c;
 }
 
-.overlay {
+.banner {
+    position: relative;
     width: 1600px;
     height: 602px;
+}
+
+.banner img {
+    background-size: cover;
+}
+
+.banner::after {
     background-color: rgba(0, 0, 2, 0.5);
+    display: block;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    text-align: center;
-}
-
-.banner {
-    position: relative;
 }
 
 .prev-arrow {
@@ -112,12 +115,10 @@ ul.nav-list {
     height: 104px;
     border: none;
     float: left;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .next-arrow {
-    background-color: rgba(78, 198, 171, 0.65);
+    background-color: hsla(167, 51%, 54%, 0.65);
     background-image: url("../img/next-arrow.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -125,18 +126,14 @@ ul.nav-list {
     height: 104px;
     border: none;
     float: right;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-
-
-.overlay {
-    padding-top: 208px;
-
+.banner-button {
+    position: absolute;
+    top: 226px;
 }
 
-.overlay h2 {
+.description h2 {
     font-size: 60px;
     line-height: 82px;
     font-weight: 900;
@@ -145,19 +142,226 @@ ul.nav-list {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 208px;
+    transform: translateX(-50%);
 }
 
-.overlay p {
+.description {
+    width: 100%;
+    height: 602px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.description p {
     font-size: 24px;
     line-height: 54px;
     font-weight: 300;
     letter-spacing: -0.02em;
+    text-transform: uppercase;
     color: #fff;
     margin: 0;
     padding: 0;
+    left: 430px;
+    top: 284px;
+    position: absolute;
+    /* transform: translateX(-50%); */
 }
 
-font-family: 'Open Sans',
+.collection {
+    padding-top: 96px;
+    text-align: center;
+}
+
+.collection h2 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #515151;
+}
+
+.collection h2::after {
+    content: "";
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+main {
+    background-color: #e9f0fd;
+    width: 1600px;
+    padding-bottom: 100px;
+}
+
+.collection-list {
+    margin-top: 82px;
+}
+
+.collection-list li {
+    float: left;
+    width: 252px;
+}
+
+.collection-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.collection-list-item-descript {
+    width: 255px;
+    height: 36px;
+    background-color: #323232;
+
+    padding-left: 14px;
+}
+
+p.name {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    float: left;
+    text-transform: uppercase;
+}
+
+p.price {
+    display: inline-block;
+    vertical-align: middle;
+    width: 54px;
+    height: 36px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    float: right;
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.collection-list-item {
+    position: relative;
+}
+
+li.collection-list-item:hover .overlay-collection {
+    display: block;
+}
+
+.button-square:hover {
+    background-color: #1abc9c;
+}
+
+.button-rect:hover {
+    background-color: #1abc9c;
+}
+
+.overlay-collection {
+    width: 255px;
+    height: 282px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 10px solid rgb(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    background-clip: padding-box;
+    display: none;
+}
+
+.button-square {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.button-rect {
+    width: 166px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.like {
+    background-image: url(../img/like.png);
+    border: 1px solid #fff;
+}
+
+.choose {
+    background-image: url(../img/choose.png);
+    border: 1px solid #fff;
+}
+
+.time {
+    background-image: url(../img/time.png);
+    border: 1px solid #fff;
+}
+
+.cart {
+    background-image: url(../img/cart.png)
+}
+
+
+.Rectangle_53 {
+    border-width: 1px;
+    border-color: rgb(26, 188, 156);
+    border-style: solid;
+    background-color: #1abc9c;
+    position: absolute;
+    left: 634px;
+    top: 1035px;
+    width: 48px;
+    height: 48px;
+    z-index: 31;
+}
+
+footer {
+    background-color: #323232;
+    text-align: center;
+    padding: 34px 0 30px 0;
+
+}
+
+footer p {
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: #fefefe;
+    line-height: 26px;
+}
+
+footer a {
+    font-size: 16px;
+    font-family: "OpenSans",
+        sans-serif;
+    color: #46bfa9;
+    line-height: 28px;
+}
+
+
+
+
+
+font-family: "Open Sans",
 sans-serif;
-font-family: 'Roboto',
+font-family: "Roboto",
 sans-serif;

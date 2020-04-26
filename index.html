@@ -13,66 +13,106 @@
 </head>
 
 <body>
-    <header class="header container clearfix">
-
-        <h2 class="logo"><a href="#">Mart</a></h2>
-        <nav class="clearfix">
-            <ul class="nav-list clearfix">
-                <li><a href="#"><span>Home</span></a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Page</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container clearfix">
+            <h2 class="logo"><a href="#">Mart</a></h2>
+            <nav class="clearfix">
+                <ul class="nav-list clearfix">
+                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <div class="banner">
+    <div class="banner clearfix">
         <img src="./img/slide.jpg" alt="freedom" width="1600" height="602">
-        <div class="overlay container">
-            <h2>Affordable Paris Tours<h2>
-                    <p>City Tours/Tour Tickets/Tour Guides</p>
-                    <div class="clearfix container"><button class="prev-arrow">
-                        </button> <button class="next-arrow">
-                        </button>
-                    </div>
-        </div>
 
+        <div class="description clearfix">
+            <div class="container">
+                <h2>Affordable Paris Tours</h2>
+                <p>City Tours/Tour Tickets/Tour Guides</p>
+                <div class="clearfix banner-button container"><button class="prev-arrow">
+                    </button> <button class="next-arrow">
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-    <main>
-        <h2>New Collection</h2>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="" alt="" width="" height">
-                    <p>Blue Tshirt</p>
-                    <p>$26</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="" alt="" width="" height">
-                    <p>Wooman Shirt</p>
-                    <p>$31</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="" alt="" width="" height">
-                    <p>Yellow Tshirt</p>
-                    <p>$21</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="" alt="" width="" height">
-                    <p>Cool Lingerie</p>
-                    <p>$56</p>
-                </a>
-            </li>
-        </ul>
+    <main class="collection">
+        <div class="container">
+            <h2>New Collection</h2>
+            <ul class="collection-list clearfix">
+                <li class="collection-list-item">
+                    <a href="#">
+                        <img src="./img/img-01.jpg" alt="#" width="255" height="282">
+                        <div class="overlay-collection">
+                            <div class="button">
+                                <button class="button-square like"></button>
+                                <button class="button-square choose"></button>
+                                <button class="button-square time"></button>
+                                <button class="button-rect cart"></button></div>
+                        </div>
+                        <div class="collection-list-item-descript">
+                            <p class="name">Blue Tshirt</p>
+                            <p class="price">$26</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="collection-list-item">
+                    <a href="#">
+                        <img src="./img/img-02.jpg" alt="#" width="255" height="282">
+                        <div class="overlay-collection">
+                            <div class="button">
+                                <button class="button-square like"></button>
+                                <button class="button-square choose"></button>
+                                <button class="button-square time"></button>
+                                <button class="button-rect cart"></button></div>
+                        </div>
+                        <div class="collection-list-item-descript">
+                            <p class="name">Woman Shirt</p>
+                            <p class="price">$31</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="collection-list-item">
+                    <a href="#">
+                        <img src="./img/img-03.jpg" alt="#" width="255" height="282">
+                        <div class="overlay-collection">
+                            <div class="button">
+                                <button class="button-square like"></button>
+                                <button class="button-square choose"></button>
+                                <button class="button-square time"></button>
+                                <button class="button-rect cart"></button></div>
+                        </div>
+                        <div class="collection-list-item-descript">
+                            <p class="name">Yellow Tshirt</p>
+                            <p class="price">$21</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="collection-list-item">
+                    <a href="#">
+                        <img src="./img/img-04.jpg" alt="#" width="255" height="282">
+                        <div class="overlay-collection">
+                            <div class="button">
+                                <button class="button-square like"></button>
+                                <button class="button-square choose"></button>
+                                <button class="button-square time"></button>
+                                <button class="button-rect cart"></button></div>
+                        </div>
+                        <div class="collection-list-item-descript">
+                            <p class="name">Cool Lingirie</p>
+                            <p class="price">$56</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
     <footer>
         <p>All Rights Reserved | Designed <a href="#">Themen Graph</a></p>
