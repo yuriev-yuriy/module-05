@@ -279,7 +279,7 @@ li.collection-list-item:hover .collection-list-item-descript {
 
 .overlay-collection {
     width: 255px;
-    height: 282px;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     border: 10px solid rgb(255, 255, 255, 0.5);
     position: absolute;
@@ -334,20 +334,6 @@ li.collection-list-item:hover .collection-list-item-descript {
 
 .cart {
     background-image: url(../img/cart.png)
-}
-
-
-.Rectangle_53 {
-    border-width: 1px;
-    border-color: rgb(26, 188, 156);
-    border-style: solid;
-    background-color: #1abc9c;
-    position: absolute;
-    left: 634px;
-    top: 1035px;
-    width: 48px;
-    height: 48px;
-    z-index: 31;
 }
 
 footer {
