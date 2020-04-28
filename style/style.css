@@ -12,6 +12,7 @@ body {
 
 img {
     display: block;
+    width: 100%;
 }
 
 a {
@@ -35,7 +36,6 @@ ol {
 }
 
 .header {
-    width: 1600px;
     padding-top: 36px;
     padding-bottom: 36px;
 }
@@ -60,8 +60,11 @@ ol {
     float: left;
 }
 
-ul.nav-list {
+nav {
     float: right;
+}
+
+ul.nav-list {
     padding: 0;
     padding-top: 10px;
 }
@@ -73,6 +76,7 @@ ul.nav-list {
     line-height: 16px;
     letter-spacing: -0.02em;
     float: left;
+    text-transform: uppercase;
 }
 
 .nav-list li:not(:last-child) {
@@ -89,12 +93,6 @@ ul.nav-list {
 
 .banner {
     position: relative;
-    width: 1600px;
-    height: 602px;
-}
-
-.banner img {
-    background-size: cover;
 }
 
 .banner::after {
@@ -131,9 +129,26 @@ ul.nav-list {
     cursor: pointer;
 }
 
+.parent {
+    position: relative;
+    height: 602px;
+    text-align: center;
+
+}
+
 .banner-button {
     position: absolute;
-    top: 226px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text {
+    width: 760px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .description h2 {
@@ -145,15 +160,10 @@ ul.nav-list {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    position: absolute;
-    left: 50%;
-    top: 208px;
-    transform: translateX(-50%);
 }
 
 .description {
     width: 100%;
-    height: 602px;
     position: absolute;
     left: 0;
     top: 0;
@@ -169,10 +179,6 @@ ul.nav-list {
     color: #fff;
     margin: 0;
     padding: 0;
-    left: 430px;
-    top: 284px;
-    position: absolute;
-    /* transform: translateX(-50%); */
 }
 
 .collection {
@@ -195,13 +201,11 @@ ul.nav-list {
     width: 164px;
     height: 7px;
     background-color: #1abc9c;
-    margin: 0 auto;
-    margin-top: 26px;
+    margin: 26px auto 0;
 }
 
 main {
     background-color: #e9f0fd;
-    width: 1600px;
     padding-bottom: 100px;
 }
 
@@ -222,7 +226,6 @@ main {
     width: 255px;
     height: 36px;
     background-color: #323232;
-
     padding-left: 14px;
 }
 
@@ -258,6 +261,14 @@ li.collection-list-item:hover .overlay-collection {
     display: block;
 }
 
+li.collection-list-item:hover .button {
+    display: block;
+}
+
+li.collection-list-item:hover .collection-list-item-descript {
+    background-color: #1abc9c;
+}
+
 .button-square:hover {
     background-color: #1abc9c;
 }
@@ -287,6 +298,7 @@ li.collection-list-item:hover .overlay-collection {
 }
 
 .button {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -339,7 +351,6 @@ li.collection-list-item:hover .overlay-collection {
 }
 
 footer {
-    width: 1600px;
     background-color: #323232;
     text-align: center;
     padding: 34px 0 30px 0;
@@ -360,12 +371,3 @@ footer a {
     color: #46bfa9;
     line-height: 28px;
 }
-
-
-
-
-
-font-family: "Open Sans",
-sans-serif;
-font-family: "Roboto",
-sans-serif;
