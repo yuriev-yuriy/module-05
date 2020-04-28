@@ -253,15 +253,15 @@ p.price {
     background-color: rgb(255, 255, 255, 0.4);
 }
 
-.collection-list-item {
+div.collection-list-item {
     position: relative;
 }
 
-li.collection-list-item:hover .overlay-collection {
+div.collection-list-item:hover .overlay-collection {
     display: block;
 }
 
-li.collection-list-item:hover .button {
+div.collection-list-item:hover .button {
     display: block;
 }
 
