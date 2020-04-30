@@ -104,6 +104,10 @@ ul.nav-list {
   left: 0;
 }
 
+.banner img {
+  object-fit: cover;
+}
+
 .prev-arrow {
   background-color: rgba(78, 198, 171, 0.65);
   background-image: url("../img/prev-arrow.png");
@@ -156,12 +160,12 @@ ul.nav-list {
 
 .description {
   width: 100%;
-  height: 100%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
   z-index: 1;
   text-align: center;
+  transform: translateY(-50%);
 }
 
 .description p {
@@ -358,11 +362,4 @@ footer a {
   font-family: "OpenSans", sans-serif;
   color: #46bfa9;
   line-height: 28px;
-}
-.add_to_cart {
-  font-size: 14px;
-  font-family: "OpenSans";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 2.286;
 }
