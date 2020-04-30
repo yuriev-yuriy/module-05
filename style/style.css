@@ -139,8 +139,6 @@ ul.nav-list {
 }
 
 .text {
-  width: 760px;
-  margin: 0 auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -164,8 +162,6 @@ ul.nav-list {
   left: 0;
   top: 50%;
   z-index: 1;
-  text-align: center;
-  transform: translateY(-50%);
 }
 
 .description p {
